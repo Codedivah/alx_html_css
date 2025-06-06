@@ -1,0 +1,32 @@
+body{
+  background-color: bisque;
+    display: flex;
+    flex-direction: column;
+  margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Times New Roman', Times, serif;
+    color: 333;
+}
+
+main{
+    display: flex;
+  flex-direction: row;
+}
+
+
+    article {
+        flex: 2;
+        overflow-y: auto;
+    }
+
+    aside {
+        flex: 1;
+        overflow-y: auto;
+      }
+
+      .logo {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+

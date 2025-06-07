@@ -8,142 +8,194 @@
 </head>
 <body>
   <!-- Header -->
-  <header>
-    <nav>
-      <a href="https://example.com">
-        <img src="https://via.placeholder.com/100" alt="Logo" />
+  <header class="header">
+    <nav class="header__nav">
+      <a href="https://example.com" class="header__logo-link">
+        <img src="images/logo.png" alt="Logo" class="header__logo" />
       </a>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="tweets.html">Tweets</a></li>
-        <li><a href="about.html">About</a></li>
+      <ul class="header__menu">
+        <li class="header__menu-item"><a href="index.html" class="header__menu-link">Course</a></li>
+        <li class="header__menu-item"><a href="tweets.html" class="header__menu-link">Pricing</a></li>
+        <li class="header__menu-item"><a href="about.html" class="header__menu-link">Login</a></li>
       </ul>
     </nav>
+<div>
+      <div class="header_text">
+         <h1>Get Schooled</h1>
+      <div class="header_list">
+      <p>SMILE</p>
+      <p>GRIN</p>
+      <P>LAUGH</P>
+      </div>
+      <button class="btn header__button">REGISTER FOR FREE</button>
+      
+      </div>
+
+<div >
+  <p class="learn"><span>Learn</span> from the pros</p>
+
+  <div class="header__images">
+   <div class="header__image-container"  >
+    <img src="images/1.png" alt="Smile Image" class="header__image" />
+    <h4>Phillip Massey</h4>
+    <p>Best little smile</p>
+    <p>2017</p>
+  </div>
+  <div class="header__image-container">
+    <img src="images/3.png" alt="Smile Image" class="header__image" />
+    <h4>Nannie Lawrence</h4>
+    <p>Best little smile</p>
+    <p>2017</p>
+  </div>
+   <div class="header__image-container">
+    <img src="images/2.png" alt="Smile Image" class="header__image" /> 
+    <h4>Bruce Walters</h4>
+    <p>Best Friend Smile</p>
+    <p>live performance 2019</p>
+  </div>
+   <div class="header__image-container">
+    <img src="images/4.png" alt="Smile Image" class="header__image" />
+    <h4>Henry Hughes</h4>
+    <p>24th Smiles Winner </p>
+    <span>2016 - 2019</span>
+  </div>
+
+</div>
+
+</div>
+
+</div>
   </header>
 
   <!-- Main Content -->
-  <main>
+  <main class="main">
     <!-- Intro Section -->
-    <section>
-      <h1>CSS Advanced</h1>
-      <p>Welcome to the advanced CSS section. Here, we will explore more complex styling techniques and layouts.</p>
-      <button class="btn">Click Me!</button>
+    <section class="intro">
+      <h1 class="intro__title">CSS Advanced</h1>
+      <p class="intro__description">Welcome to the advanced CSS section. Here, we will explore more complex styling techniques and layouts.</p>
+      <button class="btn intro__button">Click Me!</button>
     </section>
 
     <!-- Resources Section -->
-    <section>
-      <h2>Advanced CSS Techniques</h2>
-      <div>
-        <div>
-          <img src="https://via.placeholder.com/300x200" alt="CSS Resource 1" />
-          <h3>Resources</h3>
-          <p>Check out these resources to learn more about advanced CSS:</p>
+    <section class="resources">
+      <h2 class="resources__title">Advanced CSS Techniques</h2>
+      <div class="resources__grid">
+        <div class="resources__card">
+          <img src="https://via.placeholder.com/300x200" alt="CSS Resource 1" class="resources__image" />
+          <h3 class="resources__card-title">Resources</h3>
+          <p class="resources__card-description">Check out these resources to learn more about advanced CSS:</p>
         </div>
-        <div>
-          <img src="https://via.placeholder.com/300x200" alt="CSS Resource 2" />
-          <h3>Resources</h3>
-          <p>Check out these resources to learn more about advanced CSS:</p>
+        <div class="resources__card">
+          <img src="https://via.placeholder.com/300x200" alt="CSS Resource 2" class="resources__image" />
+          <h3 class="resources__card-title">Resources</h3>
+          <p class="resources__card-description">Check out these resources to learn more about advanced CSS:</p>
         </div>
-        <div>
-          <img src="https://via.placeholder.com/300x200" alt="CSS Resource 3" />
-          <h3>Resources</h3>
-          <p>Check out these resources to learn more about advanced CSS:</p>
+        <div class="resources__card">
+          <img src="https://via.placeholder.com/300x200" alt="CSS Resource 3" class="resources__image" />
+          <h3 class="resources__card-title">Resources</h3>
+          <p class="resources__card-description">Check out these resources to learn more about advanced CSS:</p>
         </div>
-        <div>
-          <img src="https://via.placeholder.com/300x200" alt="CSS Resource 4" />
-          <h3>Resources</h3>
-          <p>Check out these resources to learn more about advanced CSS:</p>
+        <div class="resources__card">
+          <img src="https://via.placeholder.com/300x200" alt="CSS Resource 4" class="resources__image" />
+          <h3 class="resources__card-title">Resources</h3>
+          <p class="resources__card-description">Check out these resources to learn more about advanced CSS:</p>
         </div>
       </div>
     </section>
 
     <!-- Quote Section -->
-    <section>
-      <blockquote>
-        "CSS is a powerful tool for creating visually appealing web pages."
-        <p> - Web Designer</p>
+    <section class="quote">
+      <blockquote class="quote__blockquote">
+        <p class="quote__text">"CSS is a powerful tool for creating visually appealing web pages."</p>
+        <p class="quote__author">- Web Designer</p>
       </blockquote>
     </section>
 
     <!-- Video List Section -->
-    <section>
-      <h3>Video List</h3>
-      <div>
+    <section class="videos">
+      <h3 class="videos__title">Video List</h3>
+      <div class="videos__list">
         <!-- Repeatable Video Card -->
-        <div>
-          <img src="https://via.placeholder.com/150" alt="Video Thumbnail" />
-          <h4>Video 1</h4>
-          <p>Introduction to Flexbox</p>
-          <h5>The Author</h5>
-          <img src="https://via.placeholder.com/50" alt="Author" />
-          <img src="https://via.placeholder.com/50" alt="Author" />
-          <img src="https://via.placeholder.com/50" alt="Author" />
-          <img src="https://via.placeholder.com/50" alt="Author" />
+        <div class="videos__card">
+          <img src="https://via.placeholder.com/150" alt="Video Thumbnail" class="videos__thumbnail" />
+          <h4 class="videos__card-title">Video 1</h4>
+          <p class="videos__description">Introduction to Flexbox</p>
+          <h5 class="videos__author-label">The Author</h5>
+          <div class="videos__rating">
+            <img src="https://via.placeholder.com/50" alt="Author" class="videos__star" />
+            <img src="https://via.placeholder.com/50" alt="Author" class="videos__star" />
+            <img src="https://via.placeholder.com/50" alt="Author" class="videos__star" />
+            <img src="https://via.placeholder.com/50" alt="Author" class="videos__star" />
+          </div>
         </div>
 
         <!-- More Videos -->
-        <div>
-          <img src="https://via.placeholder.com/150" alt="Video Thumbnail" />
-          <h4>Video 2</h4>
-          <p>Introduction to Flexbox</p>
-          <h5>The Author</h5>
-          <img src="https://via.placeholder.com/50" alt="Author" />
-          <img src="https://via.placeholder.com/50" alt="Author" />
-          <img src="https://via.placeholder.com/50" alt="Author" />
-          <img src="https://via.placeholder.com/50" alt="Author" />
+        <div class="videos__card">
+          <img src="https://via.placeholder.com/150" alt="Video Thumbnail" class="videos__thumbnail" />
+          <h4 class="videos__card-title">Video 2</h4>
+          <p class="videos__description">Introduction to Flexbox</p>
+          <h5 class="videos__author-label">The Author</h5>
+          <div class="videos__rating">
+            <img src="https://via.placeholder.com/50" alt="Author" class="videos__star" />
+            <img src="https://via.placeholder.com/50" alt="Author" class="videos__star" />
+            <img src="https://via.placeholder.com/50" alt="Author" class="videos__star" />
+            <img src="https://via.placeholder.com/50" alt="Author" class="videos__star" />
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Membership Section -->
-    <section>
-      <h3>Membership</h3>
-      <div>
-        <div>
-          <img src="https://via.placeholder.com/150" alt="Membership" />
-          <h4>Join our community</h4>
-          <p>Become a member to access exclusive content and resources.</p>
-          <button class="btn">Join Now</button>
+    <section class="membership">
+      <h3 class="membership__title">Membership</h3>
+      <div class="membership__grid">
+        <div class="membership__card">
+          <img src="https://via.placeholder.com/150" alt="Membership" class="membership__image" />
+          <h4 class="membership__card-title">Join our community</h4>
+          <p class="membership__description">Become a member to access exclusive content and resources.</p>
+          <button class="btn membership__button">Join Now</button>
         </div>
-        <div>
-          <img src="https://via.placeholder.com/150" alt="Membership" />
-          <h4>Join our community</h4>
-          <p>Become a member to access exclusive content and resources.</p>
-          <button class="btn">Join Now</button>
+        <div class="membership__card">
+          <img src="https://via.placeholder.com/150" alt="Membership" class="membership__image" />
+          <h4 class="membership__card-title">Join our community</h4>
+          <p class="membership__description">Become a member to access exclusive content and resources.</p>
+          <button class="btn membership__button">Join Now</button>
         </div>
       </div>
     </section>
 
     <!-- FAQ Section -->
-    <section>
-      <h3>FAQ</h3>
-      <div>
-        <div>
-          <h4>What is CSS?</h4>
-          <p>CSS stands for Cascading Style Sheets and is used to style HTML content.</p>
+    <section class="faq">
+      <h3 class="faq__title">FAQ</h3>
+      <div class="faq__list">
+        <div class="faq__item">
+          <h4 class="faq__question">What is CSS?</h4>
+          <p class="faq__answer">CSS stands for Cascading Style Sheets and is used to style HTML content.</p>
         </div>
-        <div>
-          <h4>Why use Flexbox?</h4>
-          <p>Flexbox makes it easier to design flexible responsive layout structures.</p>
+        <div class="faq__item">
+          <h4 class="faq__question">Why use Flexbox?</h4>
+          <p class="faq__answer">Flexbox makes it easier to design flexible responsive layout structures.</p>
         </div>
       </div>
     </section>
   </main>
 
   <!-- Footer -->
-  <footer>
-    <img src="https://via.placeholder.com/150" alt="Footer Image" />
-    <div>
-      <a href="https://example.com">
-        <img src="https://via.placeholder.com/50" alt="Social Icon" />
-      </a>
-      <a href="https://example.com">
-        <img src="https://via.placeholder.com/50" alt="Social Icon" />
-      </a>
-      <a href="https://example.com">
-        <img src="https://via.placeholder.com/50" alt="Social Icon" />
-      </a>
-      <p>Made by Fatimah - <a href="https://your-link-here.com" target="_blank">here</a>.</p>
+  <footer class="footer">
+    <img src="https://via.placeholder.com/150" alt="Footer Image" class="footer__logo" />
+    <div class="footer__content">
+      <div class="footer__social">
+        <a href="https://example.com" class="footer__social-link">
+          <img src="https://via.placeholder.com/50" alt="Social Icon" class="footer__social-icon" />
+        </a>
+        <a href="https://example.com" class="footer__social-link">
+          <img src="https://via.placeholder.com/50" alt="Social Icon" class="footer__social-icon" />
+        </a>
+        <a href="https://example.com" class="footer__social-link">
+          <img src="https://via.placeholder.com/50" alt="Social Icon" class="footer__social-icon" />
+        </a>
+      </div>
+      <p class="footer__text">Made by Fatimah - <a href="https://your-link-here.com" target="_blank" class="footer__link">here</a>.</p>
     </div>
   </footer>
 </body>

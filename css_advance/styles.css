@@ -187,3 +187,53 @@ padding: 20px;
     margin-top: -4px;
     font-style: italic;
 }
+
+
+.intro {
+    background-color: #C271FF;
+    padding: 100px 150px;
+    text-align: center;
+    color: #333333;
+    font-size: 18px;
+    line-height: 1.6;
+    display: flex;
+
+   
+}
+
+.intro__image {
+    flex: 1;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px;
+}
+.intro__title {
+    flex: 2;
+    font-size: 20px;
+    text-align: left;
+
+    line-height: 1.6;
+    font-weight: 400;
+    color: #fff;
+}
+.intro__description {
+  
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.6;
+    color: #fff;
+    text-align: left;
+}
+
+.intro__text {
+  
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.6;
+    color: #fff;
+    text-align: left;
+}

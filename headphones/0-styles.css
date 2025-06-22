@@ -1,1 +1,197 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.cta {
+  margin-top: 48px;
+  background-color: #ff6565;
+  color: #fff;
+  width: 162px;
+  height: 44px;
+  border-radius: 32px;
+  border: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+.cta:hover {
+  background-color: #ff4747;
+}
+
+.hero {
+  position: relative;
+  height: 100svh;
+  isolation: isolate;
+}
+
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header__logo {
+  position: relative;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: auto;
+  width: min(90%, 1000px);
+  padding-top: 2rem;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  @media (width <= 480px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    inset: 0;
+    background-color: #071629;
+    width: 100%;
+    padding: 1rem;
+    z-index: 10;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+
+    &.open {
+      transform: translateY(0);
+    }
+  }
+}
+
+header nav ul li {
+  position: relative;
+  font-size: 0.75rem;
+  font-weight: bold;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.hero__content {
+  height: calc(100svh - 4rem);
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  button {
+    margin-top: 48px;
+    background-color: #ff6565;
+    color: #fff;
+    width: 162px;
+    height: 44px;
+    border-radius: 32px;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  button:hover {
+    background-color: #ff4747;
+  }
+
+  p:last-of-type {
+    margin-top: 32px;
+    font-size: 0.875rem;
+    font-weight: normal;
+    max-width: 632px;
+    line-height: 1.5;
+  }}

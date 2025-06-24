@@ -1,0 +1,153 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.cta {
+  margin-top: 48px;
+  background-color: #ff6565;
+  color: #fff;
+  width: 162px;
+  height: 44px;
+  border-radius: 32px;
+  border: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+.cta:hover {
+  background-color: #ff4747;
+}
+
+footer {
+  background-color: #071629;
+  padding-top: 140px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+
+  @media (width <= 480px) {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+
+  .footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: auto;
+    width: min(90%, 1000px);
+
+    @media (width <= 480px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+    }
+  }
+
+  .footer__content--logo {
+    @media (width <= 480px) {
+      display: flex;
+      width: 122px;
+    }
+  }
+
+  .footer__content--logo svg:first-child {
+    @media (width <= 900px) {
+      display: none;
+    }
+  }
+
+  .footer__content--logo svg:last-child {
+    @media (width >= 900px) {
+      display: none;
+    }
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    padding: 0;
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  p {
+    color: #d9d9d9;
+    text-align: center;
+  }
+}
